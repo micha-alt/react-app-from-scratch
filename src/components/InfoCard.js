@@ -9,7 +9,7 @@ function InfoCard() {
           hier benutzten ECMAScript-Module werden schon zur Entwicklungs-Zeit zusammengefasst
           zu einem Bundle - also genau einer Datei. Damit entfällt natürlich die Einschränkung,
           dass der IE diese App nicht mehr laden kann. Außerdem bringt es zumindest bei HTTP 1.1
-          eine gewisse Performance-Verbesserung mit, anstatt hunderten einzelnen Dateien nur
+          eine gewisse Performance-Verbesserung mit anstatt hunderten einzelnen Dateien nur
           eine gebündelte zu laden. Damit die IE Kompatibilität erreicht wird, sollte natürlich
           auch Babel angewiesen werde, moderne Syntax-Features aus unserem Quellcode
           heraus zu "transpilieren".
