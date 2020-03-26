@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "babel src/scripts -d src/build --presets @babel/preset-react",
-    "dev": "babel --watch src/scripts -d src/build --presets @babel/preset-react"
+    "build": "webpack",
+    "dev": "webpack --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

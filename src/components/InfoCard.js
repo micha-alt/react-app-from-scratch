@@ -3,21 +3,16 @@ function InfoCard() {
   return (
     <div className="max-w-sm mx-auto mt-8 rounded overflow-hidden shadow-lg">
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">React Components</div>
+        <div className="font-bold text-xl mb-2">The Module Bundler Webpack</div>
         <p className="text-gray-700 text-base">
-          Building Blocks einer React-Anwendung sind die Komponenten. Diese
-          können sowohl als Klassen- als auch als Funktions-Komponenten
-          implementiert werden. Zu den Unterschieden: Funktions-Komponenten
-          waren früher beschränkt auf die reine Darstellung von Daten und
-          besaßen keinen eigenen Status. Dass heißt: Informationen wurden
-          nur von "außen" bezogen, das Aussehen der Kompoente konnte nicht
-          über einen eigenen State beeinflusst werden.
-        </p>
-        <p className="text-gray-700 text-base">
-          Best Practice ist hier die Single-File-Responsibility, deshalb
-          wurden die Komponenten in eigene Dateien ausgegliedert und über
-          das ECMAScript Modul-System importiert. Die Anwendung im aktuellen
-          Branch funktioniert demnach nicht mehr im IE.
+          <a href="https://webpack.js.org/">Webpack</a> ist ein Module-Bundler. Das heißt: die
+          hier benutzten ECMAScript-Module werden schon zur Entwicklungs-Zeit zusammengefasst
+          zu einem Bundle - also genau einer Datei. Damit entfällt natürlich die Einschränkung,
+          dass der IE diese App nicht mehr laden kann. Außerdem bringt es zumindest bei HTTP 1.1
+          eine gewisse Performance-Verbesserung mit, anstatt hunderten einzelnen Dateien nur
+          eine gebündelte zu laden. Damit die IE Kompatibilität erreicht wird, sollte natürlich
+          auch Babel angewiesen werde, moderne Syntax-Features aus unserem Quellcode
+          heraus zu "transpilieren".
         </p>
       </div>
     </div>
