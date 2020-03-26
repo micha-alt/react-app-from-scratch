@@ -1,5 +1,5 @@
 // Creating React element with text content
-const elt = <h1 className="text-2xl">Step 2: JSX (runtime compiled)</h1>;
+const elt = <h1 className="text-2xl">Step 3: JSX (devtime compiled)</h1>;
 
 // Creating React element with nested elements
 const card = (
@@ -7,9 +7,9 @@ const card = (
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">JSX ist eine JavaScript Extension</div>
       <p className="text-gray-700 text-base">
-        Es ist also eine Vorbehandlung des Quelltextes für den Browser nötig. Dies kann
-        beispielsweise von <a href="https://babeljs.io/" className="underline">Babel</a> geleistet
-        werden. Es ist sogar eine Runtime-Compilierung möglich.
+        Die Runtime-Compilierung ist verständlicherweise viel zu teuer was Performance betrifft.
+        Also wird eine npm-basierte Toolchain aufgesetzt um möglichst komfortabel schon
+        zur Entwicklungszeit die JSX-Übersetzung anzustossen.
       </p>
     </div>
   </div>
