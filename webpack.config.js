@@ -1,5 +1,6 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   // Default mode: development
@@ -36,8 +37,15 @@ module.exports = {
 
   // Plugins
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
     })
-  ]
+  ],
+
+  // Development Server
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+  }
 };
