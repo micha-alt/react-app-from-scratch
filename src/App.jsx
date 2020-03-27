@@ -1,3 +1,5 @@
+import React from 'react';
+
 import AppTitle from './components/AppTitle';
 import InfoCard from './components/InfoCard';
 
