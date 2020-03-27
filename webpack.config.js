@@ -1,4 +1,5 @@
-const path = require('path');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   // Default mode: development
@@ -6,12 +7,11 @@ module.exports = {
   mode: "development",
 
   // Entry Point - the main app file
-  entry: './src/app.js',
+  entry: './src/main.js',
 
   // Where and what to build
   output: {
-    filename: "app.bundle.js",
-    path: path.resolve(__dirname, "src/build")
+    filename: "app.bundle.js"
   },
 
   // Default file extensions (may be omitted)
@@ -32,5 +32,12 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  // Plugins
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
+  ]
 };
